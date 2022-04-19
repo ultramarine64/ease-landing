@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "resolutions": { "glob-parent": "^6.0.1" },
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "preinstall": "npx npm-force-resolutions",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gh-pages": "^3.2.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}
