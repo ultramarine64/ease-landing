@@ -1,6 +1,26 @@
 @import 'libs/reset.css';
+@import 'libs/spinner.css';
 
 @import 'base/fonts';
+
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/main';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DBEEEE;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+::selection {
+  background: darken(#DBEEEE, 20%);
+}
 
 h1 {
   font-family: 'SF Compact Display Medium', sans-serif;

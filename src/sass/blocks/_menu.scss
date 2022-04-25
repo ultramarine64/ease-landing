@@ -1,0 +1,30 @@
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+      &-link {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'SF Compact Display';
+        font-size: 21px;
+        letter-spacing: 0.055em;
+        color: #3D9090;
+        transition: 0.2s all linear;
+
+        &:hover,
+        &:active {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

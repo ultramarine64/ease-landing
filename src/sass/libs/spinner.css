@@ -1,0 +1,20 @@
+.sbl-circ-path {
+  height: 80px;
+  width: 80px;
+  color: rgba(0, 0, 0, 0.2);
+  align-self: center;
+  display: inline-block;
+  border: 8px solid;
+  border-radius: 50%;
+  border-right-color: rgba(0, 0, 0, 0.6);
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
