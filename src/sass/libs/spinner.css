@@ -1,4 +1,4 @@
-.sbl-circ-path {
+.spinner {
   height: 80px;
   width: 80px;
   color: rgba(0, 0, 0, 0.2);
@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 1400px) {
-  .sbl-circ-path {
+  .spinner {
     height: 60px;
     width: 60px;
     border: 6px solid;
@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 1200px) {
-  .sbl-circ-path {
+  .spinner {
     height: 40px;
     width: 40px;
     border: 5px solid;
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: 1000px) {
-  .sbl-circ-path {
+  .spinner {
     height: 35px;
     width: 35px;
     border: 4px solid;

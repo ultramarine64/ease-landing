@@ -1,5 +1,6 @@
 import modelsCachedData from './models.js'
 import {darkModeButton} from './controls.js'
+import isHighResolutionScreen from './utils.js'
 
 const modelsDiv = document.querySelector('.main__gallery-sidebar-models');
 let modelsData = [];
@@ -89,7 +90,7 @@ function onModelSelected(modelId) {
 
   const mainGallery = document.querySelector('.main__gallery-container');
   const imgTmp = new Image();
-  imgTmp.src = 'images/light_background.jpg';
+  imgTmp.src = isHighResolutionScreen() ? 'images/light_background_2x.jpg' : 'images/light_background.jpg';
   imgTmp.onload = () => mainGallery.style.backgroundImage = `url('${imgTmp.src}')`;
 
   const galleryLampImg = document.querySelector('.main__gallery-lamp-img');
