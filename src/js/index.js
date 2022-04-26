@@ -72,31 +72,29 @@ function onModelSelected(modelId) {
     return;
   }
 
-  const description = document.querySelector('.main__info-description');
-
-  const material = description.querySelector('.main__info-description-material').querySelector('span');
+  const material = document.querySelector('.main__info-description-material').querySelector('span');
   material.textContent = modelData.material[0].toUpperCase() + modelData.material.slice(1);
 
-  const dimensions = description.querySelector('.main__info-description-dimensions').querySelector('span');
+  const dimensions = document.querySelector('.main__info-description-dimensions').querySelector('span');
   dimensions.textContent = `H ${modelData.height} x W ${modelData.width} x D ${modelData.width}`;
 
-  const weight = description.querySelector('.main__info-description-weight').querySelector('span');
+  const weight = document.querySelector('.main__info-description-weight').querySelector('span');
   weight.textContent = `${modelData.weight} kg`;
 
-  const electrification = description.querySelector('.main__info-description-electrification').querySelector('span');
+  const electrification = document.querySelector('.main__info-description-electrification').querySelector('span');
   electrification.textContent = modelData.electrification;
 
-  const additionalsLampImg = document.querySelector('.main__additionals-lamp-img');
+  const additionalsLampImg = document.querySelector('.main__info-lamp-img');
   additionalsLampImg.src = modelData.image;
 
-  const mainGallery = document.querySelector('.main__gallery');
+  const mainGallery = document.querySelector('.main__gallery-container');
   const imgTmp = new Image();
   imgTmp.src = 'images/light_background.jpg';
   imgTmp.onload = () => mainGallery.style.backgroundImage = `url('${imgTmp.src}')`;
 
   const galleryLampImg = document.querySelector('.main__gallery-lamp-img');
   galleryLampImg.src = modelData.image;
-  galleryLampImg.style.marginTop = modelData.isDarkMode ? '-12%' : '0';
+  galleryLampImg.style.display= "block";
 
   darkModeButton.disabled = !modelData.isDarkMode;
 }

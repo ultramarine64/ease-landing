@@ -8,6 +8,16 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 1100px) {
+      gap: 35px;
+    }
+    @media (max-width: 950px) {
+      gap: 30px;
+    }
+    @media (max-width: 850px) {
+      gap: 25px;
+    }
+
     &-item {
       &-link {
         display: block;
@@ -19,6 +29,19 @@
         letter-spacing: 0.055em;
         color: #3D9090;
         transition: 0.2s all linear;
+
+        @media (max-width: 1100px) {
+          font-size: 18px;
+          letter-spacing: 0.050em;
+        }
+        @media (max-width: 950px) {
+          font-size: 17px;
+          letter-spacing: 0.045em;
+        }
+        @media (max-width: 850px) {
+          font-size: 16px;
+          letter-spacing: 0.040em;
+        }
 
         &:hover,
         &:active {
