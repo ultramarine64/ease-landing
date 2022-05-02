@@ -99,3 +99,11 @@ function onModelSelected(modelId) {
 
   darkModeButton.disabled = !modelData.isDarkMode;
 }
+
+function adjustModelsHeightToWidth() {
+  let models = document.querySelectorAll('.main__gallery-sidebar-model');
+  models.forEach(model => model.style.height = `${model.clientWidth}px`);
+}
+
+window.addEventListener('resize', adjustModelsHeightToWidth);
+adjustModelsHeightToWidth();
