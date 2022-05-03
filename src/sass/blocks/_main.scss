@@ -9,6 +9,7 @@
   transition: all 0.2s linear;
   grid-template-rows: 42fr 58fr;
   grid-template-columns: 32% 11% 57%;
+
   @media (max-height: 1100px) {
     grid-template-columns: 38% 10% 52%;
   }
@@ -24,9 +25,7 @@
     flex-direction: column;
     transition: all 0.2s linear;
     gap: 32px;
-
     overflow-y: scroll;
-
     scrollbar-width: none;
     &::-webkit-scrollbar {
       width: 0;
@@ -73,13 +72,13 @@
     display: grid;
     grid-template-columns: 16% 84%;
     grid-template-rows: 60% 40%;
-
     flex-direction: row-reverse;
     grid-row: 1 / 3;
     grid-column: 2 / 4;
 
     &-container {
       background-image: url('../../images/light_background.jpg');
+      background-color: #BDDDDD;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 30% top;
@@ -88,7 +87,6 @@
       overflow: hidden;
       width: 100%;
       border-radius: 18px;
-
       grid-row: 1 / 3;
       grid-column: 2 / 3;
     }
@@ -115,7 +113,6 @@
       position: relative;
       margin-bottom: 36px;
       z-index: 3;
-
       grid-row: 2 / 3;
       grid-column: 1 / 2;
 
@@ -141,6 +138,7 @@
         top: 0;
         right: -10%;
         box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+
         @media (max-width: 1000px) {
           width: 0;
         }
@@ -238,6 +236,7 @@
             &:hover {
               opacity: 0.5;
             }
+
             @media (max-width: 1600px) {
               width: 45%;
             }
